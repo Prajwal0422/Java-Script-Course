@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Quiz Application</h1>
+    <div id="quiz-box">
+      <div id="question"></div>
+      <div id="options"></div>
+      <p id="timer">⏳ Time: <span id="time">30</span>s</p>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result-box" style="display:none;">
+      <h2>Your Score: <span id="score"></span></h2>
+      <p>🏆 High Score: <span id="highscore"></span></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
